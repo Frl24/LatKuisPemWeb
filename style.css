@@ -1,0 +1,105 @@
+:root {
+    /* #EEF2F7 Background halaman */
+    --background: #EEF2F7;
+    /* #FFFFFF Background card */
+    --card-background: #FFFFFF;
+    /* #CBD5E1 Border card */
+    --card-border: #CBD5E1;
+    /* #0D6EFD Judul dan warna tombol (btn-primary) */
+    --primary-color: #0D6EFD;
+    /* #052C65 Warna tombol saat di-hover */
+    --hover-color: #052C65;
+    /* #CFE2FF Slide carousel 1 dan blok warna card 1 */
+    --carousel-1: #CFE2FF;
+    /* #FFF3CD Slide carousel 2 dan blok warna card 3 */
+    --carousel-2: #FFF3CD;
+    /* #D1E7DD Slide carousel 3 dan blok warna card 2 */
+    --carousel-3: #D1E7DD;
+    /* #1E293B Warna teks utama */
+    --text-primary: #1E293B;
+    /* #475569 Warna teks pendukung (subjudul dan deskripsi) */
+    --text-secondary: #475569;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Figtree', arial, sans-serif;
+    color: var(--text-primary);
+}
+
+.nav{
+    font-weight: 600;
+}
+
+.judul {
+    padding-top: 30px;
+    color: var(--primary-color);
+    font-size:  32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subjudul {
+    padding-bottom: 10px;
+    color: var(--text-secondary);
+    font-size:  14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.slide{
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-item{
+    font-weight: 400;
+    height: 160px;
+    padding-top: 50px;
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.cs1{
+    background-color: var(--carousel-1);
+    text-align: center;
+}
+
+.cs2{
+    background-color: var(--carousel-2);
+    text-align: center;
+}
+
+.cs3{
+    background-color: var(--carousel-3);
+    text-align: center;
+}
+
+.menu-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+.kartu-menu{
+    width: 220px;
+    padding: 20px;
+    border: 2px solid var(--card-border);
+    background-color: var(--card-background);
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+    color: var(--text-secondary);
+    font-weight: 400;
+    .btn:hover{
+        background-color: var(--hover-color);
+        border-color: var(--hover-color);
+    }
+}
+
+.blok-warna{
+    height: 100px;
+    width: 100%;
+    border-radius: 4px;
+}
